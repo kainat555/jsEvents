@@ -1,0 +1,106 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <initial-scale=1.0">
+    <title>Js Events</title>
+</head>
+<body>
+<input type="button" value="submit" onClick="alert('Hello');">
+<a href="JavaScript:void(0)" onclick="var a = prompt('Enter your name');
+alert('Hello ' + a);
+age()">Click</a>
+
+
+
+<img width="700px" height="500px" src="https://i.pinimg.com/originals/e4/43/6e/e4436e9474484cafc97c168c4e0fd90e.jpg" alt="Baby image"
+onmousemove="src='baby img.jpg'">
+
+
+<a href="JavaScript:void(0)" onmouseover="this.style.color='red';" onmouseout="this.style.color='purple';">Click Me</a>
+
+
+<br>
+
+Email<br>
+<input id="email" type="text" onchange="choiceColor()"
+onfocus="this.style.backgroundColor='pink';"
+onblur="this.style.backgroundColor='white';">
+
+
+<br>
+
+<form action=""> 
+    Email<br>
+    <input type="email" name="email" id="email" onfocus="checkAddress()">
+<input type="text" name="" id="name" onchange="getName();" > 
+<input type="button" value="Submit" id="btn" onfocus="this.style.backgroundColor='purple';">
+</form>
+
+<br>
+    
+<!-- Practice Question  -->
+
+<!-- change para style,font,size -->
+<p id="para">This is a text.</p>            
+<input type="button" value="Submit" onclick="changeStyle()">
+
+
+
+<!-- change backgroundColor -->
+<p id="text">This is a paragraph.</p>
+<button onclick="setBgColor()">Click me</button>
+
+
+
+<input type="button" value="Submit" onclick="setNames()"
+<img width='200px' height='200px' src='https://i.pinimg.com/originals/1b/09/0c/1b090c309c1e4773f31f6f7231082b82.jpg'" type="button" value="Submit"> -->
+
+
+<br>
+<!-- method#1 read more -->
+<p id="para">Lorem ipsum dolor sit <a href="javascript:void(0)" onclick="changeText()">Read More..</a></p>
+
+
+<br>
+
+<!-- method#2 -->
+<p id="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum officia quia quidem, 
+    tempore, autem delectus at cumatque numquam quasi odit rerum cupiditate 
+    accusantium doloribus voluptate, quibusdam quod nostrum accusamus!</p>
+
+
+<p id="para">Lorem ipsum dolor <a href="javascript: void(0)" onclick="changeText()">read more..</a></p>    
+
+<br>
+<!-- DisappearImage connected with CSS -->
+<img src="baby img.jpg" id="babyimg" alt="baby image" onmouseover="DisappearImage()">
+
+
+<img class="hidden" src="baby img.jpg" alt="baby image"  id="babyimg" onmousemove="changeImageWidth()">
+
+<br>
+
+<!--  method#1 swapping images`  ex#1 -->
+<img src="baby img2.jpg" id="babyimg2" alt="baby image" onmouseover="changeImage()"
+onmouseout="changeImageBefore()">
+
+<br>
+
+<!--  method#1 swapping images`  ex#2 -->
+<img width="50%" src="beforepic.jpeg" id="beforepic" alt="flower pic" onmouseover="changeImage()" 
+onmouseout="changeImageFlower()">
+
+<br>
+
+<!-- method#2  swapping images` -->
+<img src="beforepic.jpeg" id="image" onmouseover="changeImage('image' , 'afterpic.jpg')" alt="flower image" 
+onmouseout="changeImage('image' , 'beforepic.jpeg')">;
+
+
+
+
+</body>
+<script src="app.js"></script>
+</html>
